@@ -15,7 +15,7 @@ main {
 .step-box {
     width: 300px;
     margin-right: 30px;
-    padding-right:10px;
+    padding:10px;
     float:left;
     border: 1px solid #eee;
     position: relative;
@@ -51,4 +51,21 @@ main {
 }
 .title {
     margin: 15px 0 5px;
+}
+
+@media screen and (max-width:768px) {
+    main {
+        width: 100%;
+        margin: 50px auto;
+    }
+    .step-box {
+        width: 90%;
+        float: none;
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-bottom: 20px;
+    }
+    .step-box:last-child {
+        margin-bottom: 0;
+    }
 }
